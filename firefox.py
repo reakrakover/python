@@ -10,5 +10,5 @@ driver = webdriver.Remote(
     desired_capabilities=desired_cap)
 
 driver.get("http://www.mywebtoolz.com")
-time.sleep(2)
+# time.sleep(2)
 driver.quit()
