@@ -44,6 +44,7 @@ class AustriaChromeScheidung(unittest.TestCase):
         try:
             # load the page url
             self.driver.get("http://www.mywebtoolz.com")
+            time.sleep(20)
 
         except (AssertionError, WebDriverException, NoSuchElementException):
 
@@ -57,7 +58,6 @@ class AustriaChromeScheidung(unittest.TestCase):
         if self.test_result is not None:
             self.api_session.put('https://crossbrowsertesting.com/api/v3/selenium/' + self.driver.session_id,
                                  data={'action': 'set_score', 'score': self.test_result})
-        time.sleep(20)
 
 
 if __name__ == '__main__':
