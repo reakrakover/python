@@ -9,6 +9,6 @@ driver = webdriver.Remote(
     command_executor='http://reakrakover2:iFi4yYYQk3ozzAaQvTLy@hub.browserstack.com:80/wd/hub',
     desired_capabilities=desired_cap)
 
-driver.get("http://www.google.com")
+driver.get("http://www.mywebtoolz.com")
 time.sleep(2)
 driver.quit()
